@@ -1,0 +1,4 @@
+4. add in workout timer(maybe in another version)
+15. maybe allow for scheduling of multiple events(Another version)
+16. go through and finish activities
+17. allow for deletion of sets and lifts in edit and add workouts

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.liqhtninq.strengthtracker.Register"
+    android:background="?android:attr/colorForegroundInverse">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etpass"
+        android:hint="Password"
+        android:background="?attr/colorBackgroundFloating"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etemail"
+        android:layout_alignStart="@+id/etemail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etemail"
+        android:hint="Email"
+        android:background="?attr/colorBackgroundFloating"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/etpass"
+        android:layout_alignLeft="@+id/etusername"
+        android:layout_alignStart="@+id/etusername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etusername"
+        android:hint="Username"
+        android:background="?attr/colorBackgroundFloating"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/etemail"
+        android:layout_alignLeft="@+id/etsurname"
+        android:layout_alignStart="@+id/etsurname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etsurname"
+        android:hint="Last Name"
+        android:background="?attr/colorBackgroundFloating"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/etusername"
+        android:layout_alignLeft="@+id/etWorkoutName"
+        android:layout_alignStart="@+id/etWorkoutName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etWorkoutName"
+        android:hint="First Name"
+        android:backgroundTint="?attr/colorBackgroundFloating"
+        android:background="?attr/colorBackgroundFloating"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/etsurname"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etpasscheck"
+        android:hint="Repeat Password"
+        android:background="?attr/colorBackgroundFloating"
+        android:layout_below="@+id/etpass"
+        android:layout_alignLeft="@+id/etpass"
+        android:layout_alignStart="@+id/etpass"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnreg"
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnReg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnreg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/ErrorText" />
+
+</RelativeLayout>

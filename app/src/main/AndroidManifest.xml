@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liqhtninq.strengthtracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddWorkout" />
+        <activity android:name=".SelectLift" />
+        <activity android:name=".CurrentLiftView" />
+        <activity android:name=".CalanderView" />
+        <activity android:name=".EditWorkout" />
+        <activity android:name=".ViewWorkout" />
+        <activity android:name=".SelectTemplateForEvent" />
+        <activity android:name=".UserInfo" />
+        <activity android:name=".EditUserInfo" />
+        <activity android:name=".CreateSchedule" />
+        <activity android:name=".SelectEvent" />
+        <activity android:name=".Progress" />
+        <activity android:name=".ProgressSelector"></activity>
+    </application>
+
+</manifest>
